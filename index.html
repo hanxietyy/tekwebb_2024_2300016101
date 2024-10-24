@@ -8,13 +8,59 @@
 </head>
 <body>
     <img src="tes.jpg" alt="Aboutme" width="150" height="150">
+    <div class="container">
+        <section class="about">
     <h2>About Me</h2>
     <p>Nama saya Farhan Zhuri Parmestu, saya suka bermain gitar dan bernyanyi. Saya mahasiswa di Universitas Ahmad Dahlan</p>
+        </section>
+
+        <section class="projects">
     <h2>Projects</h2>
-    <p><a>Project 1 Title</a> - Brief description of Project 1</p>
-    <p><a>Project 2 Title</a> - Brief description of Project 2</p>
+    <div class="project-item">
+        <a href="#">Project 1 Title</a> - Brief description of Project 1
+        </div>
+        <div class="project-item">
+            <a href="#">Project 2 Title</a> - Brief description of Project 2
+            </div>
+        </section>
+
+        <section class="contact">
     <h2>Contact</h2>
-    <p>Email: farhan.zhuriparmestu@gmail.com</p>
-    <p>Instagram: <a>farhan.zp</a></p>
+    <p>Email: <a href="mailto:farhan.zhuriparmestu@gmail.com">farhan.zhuriparmestu@gmail.com</a></p>
+    <p>Instagram:  <a href="https://instagram.com/farhan.zp" target="_blank">farhan.zp</a></p>
+        </section>
+
+        <section class="toggle-mode">
+    <h2>Toggle Mode</h2>
+    <div class="toggle-controls">
+        <label for="backgroundColor">Background Color:</label>
+        <select id="backgroundColor">
+            <option value="white">White</option>
+            <option value="lightblue">Light Blue</option>
+            <option value="lightpink">Light Pink</option>
+            <option value="lightyellow">Light Yellow</option>
+        </select>
+
+        <label for="fontSize">Font Size:</label>
+        <input type="range" id="fontSize" min="12" max="30" value="16">
+
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+
+        <label for="fontStyle">Font Style:</label>
+        <select id="fontStyle">
+            <option value="sans-serif">Sans-Serif</option>
+            <option value="Serif">Serif</option>
+        </select>
+    </div>
+        </section>
+
+        <section class="todo-list">
+            <h2>My To-Do List</h2>
+            <input type="text" id="newTask" placeholder="Enter a new task">
+            <button id="addTaskButton">Add Task</button>
+            <ul id="taskList"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

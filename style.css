@@ -3,33 +3,137 @@ img{
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+    margin-bottom: 25px;
 }
 h2{
     color: #1485c6;
     margin-bottom: 10px;
-    text-align: center;
     width: 1260px;
-    
+    font-size: 24px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
 }
 body {
     font-family: Arial, sans-serif;
     margin-bottom: 10px;
-}
-p{
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px 0;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-p{
+    transition: background-color 0.5s ease, color 0.5s ease;
+    line-height: 1.6;
+    background-color: white;
     color: black;
-    width: 500px;
-    border: 1px solid whitesmoke;
+    padding: 20px;
+}
+p{  
+    padding: 7px;
     margin: 0 auto;
+    color: black;
+    border: 1px solid whitesmoke;
 }
 a {
     color: #1480be;
     text-decoration: none;
     font-weight: bold;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.dark-mode button:hover {
+    background-color: black;
+}
+.dark-mode .toggle-mode{
+    color: black;
+}
+.dark-mode .projects{
+    color: black;
+}
+.dark-mode .todo-list{
+    color: black;
+}
+
+#todoApp {
+    max-width: 400px;
+    margin: auto;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about, .projects, .contact, .toggle-mode, .todo-list {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-item {
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.toggle-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#taskList {
+    list-style-type: none;
+}
+
+#taskList li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3.03;
+}
+
+#newTask {
+    padding: 10px;
+    width: 70%;
+}
+
+input, select {
+    padding: 10px;
+    margin-right: 10px;
 }
